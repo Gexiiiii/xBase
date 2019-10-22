@@ -5,6 +5,7 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.gexiiiii.base.widget.XLoadingDialog
 
 /**
  * author : Gexiiiii
