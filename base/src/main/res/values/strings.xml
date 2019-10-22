@@ -1,0 +1,39 @@
+<resources>
+    <string name="lib_name">base</string>
+
+    <declare-styleable name="XTabLayout">
+        <attr format="reference" name="TextStyle"/>
+        <attr format="dimension" name="IconDimen"/>
+        <attr format="color" name="BackgroundColor"/>
+        <attr format="integer" name="BackgroundAlpha"/>
+        <attr format="color" name="SelectLineColor"/>
+        <attr format="boolean" name="UnboundedRipple"/>
+        <attr format="reference" name="RippleColor"/>
+        <attr format="dimension" name="SelectLineHeight"/>
+        <attr format="reference" name="SelectLineStyle"/>
+        <attr format="enum" name="TabMode">
+            <enum name="fixed" value="0"/>
+            <enum name="scrollable" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="XBaseItemView">
+        <attr name="isShowUnderLine" format="boolean"/>
+        <attr name="line_color" format="reference"/>
+        <attr name="line_height" format="dimension"/>
+        <attr name="line_margin" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="XItemView">
+        <attr name="title" format="string"/>
+        <attr name="title_style" format="reference"/>
+        <attr name="left_content" format="string"/>
+        <attr name="left_content_style" format="reference"/>
+        <attr name="right_content" format="string"/>
+        <attr name="right_content_style" format="reference"/>
+        <attr name="left_icon" format="reference"/>
+        <attr name="left_icon_dimen" format="dimension"/>
+        <attr name="right_icon" format="reference"/>
+        <attr name="right_icon_dimen" format="dimension"/>
+    </declare-styleable>
+</resources>

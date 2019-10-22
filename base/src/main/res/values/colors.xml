@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--黑色透明-->
+    <color name="colorBlack_alpha90">#1A000000</color>
+    <color name="colorBlack_alpha80">#33000000</color>
+    <color name="colorBlack_alpha70">#4D000000</color>
+    <color name="colorBlack_alpha60">#66000000</color>
+    <color name="colorBlack_alpha50">#80000000</color>
+    <color name="colorBlack_alpha40">#99000000</color>
+    <color name="colorBlack_alpha30">#B3000000</color>
+    <color name="colorBlack_alpha20">#CC000000</color>
+    <color name="colorBlack_alpha10">#E6000000</color>
+
+    <!--黑色透明-->
+    <color name="colorWhite_alpha90">#1AFFFFFF</color>
+    <color name="colorWhite_alpha80">#33FFFFFF</color>
+    <color name="colorWhite_alpha70">#4DFFFFFF</color>
+    <color name="colorWhite_alpha60">#66FFFFFF</color>
+    <color name="colorWhite_alpha50">#80FFFFFF</color>
+    <color name="colorWhite_alpha40">#99FFFFFF</color>
+    <color name="colorWhite_alpha30">#B3FFFFFF</color>
+    <color name="colorWhite_alpha20">#CCFFFFFF</color>
+    <color name="colorWhite_alpha10">#E6FFFFFF</color>
+
+    <!--灰色-->
+    <color name="colorGray_90">#1A1A1A</color>
+    <color name="colorGray_80">#333333</color>
+    <color name="colorGray_70">#4D4D4D</color>
+    <color name="colorGray_60">#666666</color>
+    <color name="colorGray_50">#808080</color>
+    <color name="colorGray_40">#999999</color>
+    <color name="colorGray_30">#B3B3B3</color>
+    <color name="colorGray_20">#CCCCCC</color>
+    <color name="colorGray_10">#E6E6E6</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+</resources>
