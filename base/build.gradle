@@ -10,7 +10,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -46,11 +46,12 @@ dependencies {
     implementation 'jp.wasabeef:glide-transformations:4.1.0'
 
     //网络请求
-    implementation "com.squareup.retrofit2:retrofit:2.6.2"
-    implementation "com.squareup.retrofit2:converter-gson:2.6.2"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:2.6.2"
-    implementation 'me.jessyan:retrofit-url-manager:1.4.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.14.4'
+    api 'com.squareup.okhttp3:okhttp:4.2.2'
+    api "com.squareup.retrofit2:retrofit:2.6.2"
+    api "com.squareup.retrofit2:converter-gson:2.6.2"
+    api "com.squareup.retrofit2:adapter-rxjava2:2.6.2"
+    api 'me.jessyan:retrofit-url-manager:1.4.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.14.4'
 
     implementation 'com.google.android.material:material:1.0.0'
 }
