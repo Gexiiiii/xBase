@@ -17,6 +17,7 @@ import com.gexiiiii.base.widget.XLoadingDialog
  */
 abstract class XBaseFragment : Fragment(), XView, XBaseUI {
 
+    open val TAG = javaClass.simpleName
     /**
      * 是否已经加载视图
      */
@@ -102,6 +103,10 @@ abstract class XBaseFragment : Fragment(), XView, XBaseUI {
     }
 
     override fun showToast(msg: String) {
-        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+        if (Thread.currentThread().id == uiThreadId) {
+            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+            return
+        }
+        mHandler.post { Toast.makeText(context, msg, Toast.LENGTH_SHORT).show() }
     }
 }

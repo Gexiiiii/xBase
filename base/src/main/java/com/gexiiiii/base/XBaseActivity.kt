@@ -14,9 +14,10 @@ import com.gexiiiii.base.widget.XLoadingDialog
  */
 abstract class XBaseActivity : AppCompatActivity(), XView, XBaseUI {
 
+    open val TAG = javaClass.simpleName
     open var mLoadingDialog: XLoadingDialog? = null
 
-    private var mHandler = Handler(Looper.getMainLooper())
+    protected var mHandler = Handler(Looper.getMainLooper())
     private var uiThreadId = Thread.currentThread().id
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,6 +70,10 @@ abstract class XBaseActivity : AppCompatActivity(), XView, XBaseUI {
     }
 
     override fun showToast(msg: String) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        if (Thread.currentThread().id == uiThreadId) {
+            Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
+            return
+        }
+        mHandler.post { Toast.makeText(this,msg,Toast.LENGTH_SHORT).show() }
     }
 }
